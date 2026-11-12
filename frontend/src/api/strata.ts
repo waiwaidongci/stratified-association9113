@@ -1,0 +1,1 @@
+import{request}from './client';import type{Stratum}from '../types/domain';export const list=(study_id:number)=>request<Stratum[]>('/strata?study_id='+study_id);export const create=(data:unknown)=>request<Stratum>('/strata',{method:'POST',body:JSON.stringify(data)});

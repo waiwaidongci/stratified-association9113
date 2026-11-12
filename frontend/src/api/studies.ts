@@ -1,0 +1,1 @@
+import{request}from './client';import type{Study}from '../types/domain';export const list=()=>request<Study[]>('/studies');export const create=(data:unknown)=>request<Study>('/studies',{method:'POST',body:JSON.stringify(data)});export const patch=(id:number,description:string)=>request<Study>('/studies/'+id,{method:'PATCH',body:JSON.stringify({description})});

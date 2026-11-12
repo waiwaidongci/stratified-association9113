@@ -1,0 +1,1 @@
+export const roles={admin:'试验负责人',analyst:'分层分析员',viewer:'研究阅读者'};export const states:Record<string,string>={queued:'等待计算',running:'正在研究',completed:'已归档',failed:'计算失败',draft:'待审阅',approved:'已批准',rejected:'退回'};

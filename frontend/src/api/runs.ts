@@ -1,0 +1,1 @@
+import{request}from './client';import type{Run}from '../types/domain';export const list=()=>request<Run[]>('/runs');export const detail=(id:number)=>request<Run>('/runs/'+id);export const create=(data:unknown)=>request<Run>('/runs',{method:'POST',body:JSON.stringify(data)});

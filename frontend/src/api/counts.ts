@@ -1,0 +1,1 @@
+import{request}from './client';import type{Count,TableRow}from '../types/domain';export const list=(study_id:number)=>request<TableRow[]>('/counts?study_id='+study_id);export const save=(stratum_id:number,data:unknown)=>request<Count>('/counts/'+stratum_id,{method:'PUT',body:JSON.stringify(data)});
